@@ -10,6 +10,7 @@
         <div>
             <h1>Super Busão Calculator</h1>
             <form>
+                <h2>Configurações</h2>
                 <label for="ticketValue">Valor da Passagem:</label>
                 <input type="text" id="ticketValue" name="ticketValue" value="3,05"><br>
 
@@ -23,31 +24,33 @@
                 <input type="date" id="userEndDate" name="userEndDate"><br>
 
                 <h2>Passagens por dia</h2>
-                <label for="domingo">Domingo:</label>
-                <input type="text" id="domingo" name="domingo" value="0"><br>
+                <label for="sun">Domingo:</label>
+                <input type="number" id="sun" name="sun" value="0"><br>
 
-                <label for="segunda">Segunda-Feira:</label>
-                <input type="text" id="segunda" name="segunda" value="0"><br>
+                <label for="mon">Segunda-Feira:</label>
+                <input type="number" id="mon" name="mon" value="0"><br>
 
-                <label for="terca">Terça-Feira:</label>
-                <input type="text" id="terca" name="terca" value="0"><br>
+                <label for="tue">Terça-Feira:</label>
+                <input type="number" id="tue" name="tue" value="0"><br>
 
-                <label for="quarta">Quarta-Feira:</label>
-                <input type="text" id="quarta" name="quarta" value="0"><br>
+                <label for="wed">Quarta-Feira:</label>
+                <input type="number" id="wed" name="wed" value="0"><br>
 
-                <label for="quinta">Quinta-Feira:</label>
-                <input type="text" id="quinta" name="quinta" value="0"><br>
+                <label for="thu">Quinta-Feira:</label>
+                <input type="number" id="thu" name="thu" value="0"><br>
 
-                <label for="sexta">Sexta-Feira:</label>
-                <input type="text" id="sexta" name="sexta" value="0"><br>
+                <label for="fri">Sexta-Feira:</label>
+                <input type="number" id="fri" name="fri" value="0"><br>
 
-                <label for="sabado">Domingo:</label>
-                <input type="text" id="sabado" name="sabado" value="0"><br>
+                <label for="sat">Sábado:</label>
+                <input type="number" id="sat" name="sat" value="0"><br>
 
                 <label for="extras">Passagens extras por mês:</label>
-                <input type="text" id="extras" name="extras" value="0"><br>
+                <input type="number" id="extras" name="extras" value="0"><br>
 
-                <button id="calculate">Calcular!</button>
+                <button type="button" id="calculate">Calcular!</button>
+                <h2>Valor para depositar</h2>
+                <span>R$</span><span id="finalValueFormated">0,00</span>
             </form>
         </div>
         <script src="main.js"></script>
