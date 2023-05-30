@@ -8,9 +8,46 @@
     <body>
         <!-- google analytics -->
         <div>
+            <h1>Super Busão Calculator</h1>
             <form>
                 <label for="ticketValue">Valor da Passagem:</label>
-                <input type="text" id="ticketValue" name="ticketValue"><br>
+                <input type="text" id="ticketValue" name="ticketValue" value="3,05"><br>
+
+                <label for="cardValue">Valor no cartão:</label>
+                <input type="text" id="cardValue" name="cardValue" value="0,00"><br>
+
+                <label for="userStartDate">Calcular a partir de:</label>
+                <input type="date" id="userStartDate" name="userStartDate"><br>
+
+                <label for="userEndDate">Calcular até:</label>
+                <input type="date" id="userEndDate" name="userEndDate"><br>
+
+                <h2>Passagens por dia</h2>
+                <label for="domingo">Domingo:</label>
+                <input type="text" id="domingo" name="domingo" value="0"><br>
+
+                <label for="segunda">Segunda-Feira:</label>
+                <input type="text" id="segunda" name="segunda" value="0"><br>
+
+                <label for="terca">Terça-Feira:</label>
+                <input type="text" id="terca" name="terca" value="0"><br>
+
+                <label for="quarta">Quarta-Feira:</label>
+                <input type="text" id="quarta" name="quarta" value="0"><br>
+
+                <label for="quinta">Quinta-Feira:</label>
+                <input type="text" id="quinta" name="quinta" value="0"><br>
+
+                <label for="sexta">Sexta-Feira:</label>
+                <input type="text" id="sexta" name="sexta" value="0"><br>
+
+                <label for="sabado">Domingo:</label>
+                <input type="text" id="sabado" name="sabado" value="0"><br>
+
+                <label for="extras">Passagens extras por mês:</label>
+                <input type="text" id="extras" name="extras" value="0"><br>
+
+                <button id="calculate">Calcular!</button>
             </form>
         </div>
         <script src="main.js"></script>
