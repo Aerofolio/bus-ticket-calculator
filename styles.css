@@ -1,0 +1,44 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #FCE38A;
+}
+
+h1, h2{
+    color: #F38181;
+    margin-left: 0; margin-right: 0;
+    margin-top: 0; margin-bottom: 15px;
+}
+
+table {
+    border: solid #95E1D3 3px;
+    background-color: #EAFFD0;
+}
+
+.labelCell {
+    font-weight: bold;
+    color: #F38181;
+    padding-left: 15px; padding-right: 15px;
+}
+
+.child {
+    display: inline-block;
+    max-width: 49%;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.button{
+    border: solid #95E1D3 3px;
+    background-color: #EAFFD0;
+    color: #F38181;
+    font-weight: bold;
+    transition: 0.5s;
+    padding: 15px;
+}
+
+.button:hover{
+    background-color: white;
+}
