@@ -9,49 +9,74 @@
         <!-- google analytics -->
         <div>
             <h1>Super Busão Calculator</h1>
-            <form>
-                <h2>Configurações</h2>
-                <label for="ticketValue">Valor da Passagem:</label>
-                <input type="text" id="ticketValue" name="ticketValue" value="3,05"><br>
+            <div id="form">
+                <form>
+                    <div id="config">
+                        <h2 id="configTitle">Configurações</h2>
+                        <table id="configTable">
+                            <tr>
+                                <td><label for="ticketValue">Valor da Passagem:</label></td>
+                                <td><input type="text" id="ticketValue" name="ticketValue" value="3,05"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="cardValue">Valor no cartão:</label></td>
+                                <td><input type="text" id="cardValue" name="cardValue" value="0,00"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="userStartDate">Calcular a partir de:</label></td>
+                                <td><input type="date" id="userStartDate" name="userStartDate"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="userEndDate">Calcular até:</label></td>
+                                <td><input type="date" id="userEndDate" name="userEndDate"></td>
+                            </tr>
+                        </table>
+                    </div>
 
-                <label for="cardValue">Valor no cartão:</label>
-                <input type="text" id="cardValue" name="cardValue" value="0,00"><br>
-
-                <label for="userStartDate">Calcular a partir de:</label>
-                <input type="date" id="userStartDate" name="userStartDate"><br>
-
-                <label for="userEndDate">Calcular até:</label>
-                <input type="date" id="userEndDate" name="userEndDate"><br>
-
-                <h2>Passagens por dia</h2>
-                <label for="sun">Domingo:</label>
-                <input type="number" id="sun" name="sun" value="0"><br>
-
-                <label for="mon">Segunda-Feira:</label>
-                <input type="number" id="mon" name="mon" value="0"><br>
-
-                <label for="tue">Terça-Feira:</label>
-                <input type="number" id="tue" name="tue" value="0"><br>
-
-                <label for="wed">Quarta-Feira:</label>
-                <input type="number" id="wed" name="wed" value="0"><br>
-
-                <label for="thu">Quinta-Feira:</label>
-                <input type="number" id="thu" name="thu" value="0"><br>
-
-                <label for="fri">Sexta-Feira:</label>
-                <input type="number" id="fri" name="fri" value="0"><br>
-
-                <label for="sat">Sábado:</label>
-                <input type="number" id="sat" name="sat" value="0"><br>
-
-                <label for="extras">Passagens extras por mês:</label>
-                <input type="number" id="extras" name="extras" value="0"><br>
-
-                <button type="button" id="calculate">Calcular!</button>
-                <h2>Valor para depositar</h2>
-                <span>R$</span><span id="finalValueFormated">0,00</span>
-            </form>
+                    <div id="ticketsPerDay">
+                        <h2 id="ticketsPerDayTitle">Passagens por dia</h2>
+                        <table id="ticketsPerDayTable">
+                            <tr>
+                                <td><label for="sun">Domingo:</label></td>
+                                <td><input type="number" id="sun" name="sun" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="mon">Segunda-Feira:</label></td>
+                                <td><input type="number" id="mon" name="mon" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="tue">Terça-Feira:</label></td>
+                                <td><input type="number" id="tue" name="tue" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="wed">Quarta-Feira:</label></td>
+                                <td><input type="number" id="wed" name="wed" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="thu">Quinta-Feira:</label></td>
+                                <td><input type="number" id="thu" name="thu" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="fri">Sexta-Feira:</label></td>
+                                <td><input type="number" id="fri" name="fri" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="sat">Sábado:</label></td>
+                                <td><input type="number" id="sat" name="sat" value="0"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="extras">Passagens extras por mês:</label></td>
+                                <td><input type="number" id="extras" name="extras" value="0"></td>
+                            </tr>
+                        </table>
+                        <button type="button" id="calculate">Calcular!</button>
+                    </div>
+                    <div id="finalValue">
+                        <h2 id="finalValueTitle">Valor para depositar</h2>
+                        <span>R$</span><span id="finalValueFormated">0,00</span>
+                    </div>
+                </form>
+            </div>
         </div>
         <script src="main.js"></script>
     </body>
